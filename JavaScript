@@ -1,1 +1,29 @@
 
+                                                              *** JavaScript-DOM-Event ***
+                                                              
+*** Google Source *** 
+
+     1. Js Common Event
+     2. https://www.w3schools.com/js/js_events.asp
+     
+*** OnClick Handle Four Way ***
+   
+    1. Onclick = "Function Name ()"
+    2. ID Diye Call
+      1. const blues = document.getElementById("blueColor");
+         blues.onclick = makeBlue;
+         function makeBlue() { 
+         document.body.style.backgroundColor = "blue";
+         }
+   3. ID Diye Function Call
+      1. const greenBtn = document.getElementById("greenColor");
+         greenBtn.onclick= function () {
+         document.body.style.backgroundColor="green"
+          }
+   4. Best Popular Event Handle 
+      1. const purpleBtn = document.getElementById("purpleColor");
+         purpleBtn.addEventListener("click", purpleColor);
+         function purpleColor() {
+         document.body.style.backgroundColor = "purple";
+          }
+          
