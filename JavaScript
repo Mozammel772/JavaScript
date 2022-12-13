@@ -1,5 +1,17 @@
 
-                                                              *** JavaScript-DOM-Event ***
+                                                    *** Javascript Best Website Google Source ***
+                                               
+          1. https://www.w3schools.com/js/
+          2. https://developer.mozilla.org/en-US/docs/Web/JavaScript
+          3. https://www.tutorialspoint.com/javascript/index.htm
+          4. https://www.javatpoint.com/javascript-tutorial
+          5. https://javascript.info/
+
+
+
+
+
+                                                    *** JavaScript-DOM-Event ***
                                                               
 *** Google Source *** 
 
