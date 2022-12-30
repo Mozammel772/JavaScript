@@ -7,6 +7,105 @@
  - [Javatpoint](https://www.javatpoint.com/javascript-tutorial)
  - [javascript](https://javascript.info/)
 
+
+# Javascript String Search
+
+### 1. Javascript String Search IndexOf
+
+```bash
+const products = [
+  "Hp EliteBook Laptop",
+  "HTC Laptop",
+  "Walton Laptop",
+  "Hp EliteBook Rifle",
+  "Samsung laptop",
+  "Laptop",
+];
+const searching = "Laptop";
+const output = [];
+for (const product of products) {
+   if (product.toLowerCase().indexOf(searching.toLowerCase()) != -1) {
+     output.push(product);
+  } else {
+     console.log("Not Found");
+   }
+ }
+
+ console.log(output);
+```
+### 2. Javascript String Search includes
+
+```bash
+const products = [
+  "Hp EliteBook Laptop",
+  "HTC Laptop",
+  "Walton Laptop",
+  "Hp EliteBook Rifle",
+  "Samsung laptop",
+  "Laptop",
+];
+const searching = "Laptop";
+const output = [];
+for (const product of products) {
+  if (product.toLowerCase().includes(searching.toLowerCase())) {
+     output.push(product);
+   } else {
+     console.log("Not Found");   
+    }
+ }
+
+ console.log(output);
+```
+### 2. Javascript String Search startsWith
+
+```bash
+const products = [
+  "Hp EliteBook Laptop",
+  "HTC Laptop",
+  "Walton Laptop",
+  "Hp EliteBook Rifle",
+  "Samsung laptop",
+  "Laptop",
+];
+const searching = "Laptop";
+const output = [];
+for (const product of products) {
+   if (product.toLowerCase().startsWith(searching.toLowerCase())) {
+     output.push(product);
+  } else {
+     console.log("Not Found");
+   }
+ }
+ console.log(output);
+```
+### 2. Javascript String Search endsWith
+
+```bash
+const products = [
+  "Hp EliteBook Laptop",
+  "HTC Laptop",
+  "Walton Laptop",
+  "Hp EliteBook Rifle",
+  "Samsung laptop",
+  "Laptop",
+];
+const searching = "Laptop";
+const output = [];
+for (const product of products) {
+  if (product.toLowerCase().endsWith(searching.toLowerCase()))  {
+     output.push(product);
+  } else {
+     console.log("Not Found");
+   }
+ }
+ console.log(output);
+```
+
+
+
+
+
+
 #          Javascript DOM
 
 ## Google Source
