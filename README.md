@@ -268,7 +268,7 @@ console.log(number);
 ```bash
 120
 ```
-## 5. Default Parameter Arrow function
+## 4.1. Default Parameter Arrow function
 
 ```bash
 const number = (num1, num2 = 10) => {
@@ -283,7 +283,7 @@ console.log(number);
 ```bash
 120
 ```
-## 6. Spread Operator
+## 5. Spread Operator
 
 ```bash
 const number = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
@@ -294,7 +294,7 @@ console.log(...number);
 ```bash
 12 13 14 15 16 17 18 19 20 21 22
 ```
-## 7. Spread Operator Example
+## 5.1. Spread Operator Example
 
 ```bash
 const max = Math.max(12, 14, 145, 165, 16, 165, 1554, 5655);
