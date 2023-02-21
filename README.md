@@ -8,6 +8,16 @@
  - [javascript](https://javascript.info/)
 
 
+
+
+
+
+
+
+
+
+
+
 # Javascript String Search
 
 ### 1. Javascript String Search IndexOf
@@ -200,6 +210,47 @@ const add4 = (num1, num2) => num1 + num2;
 const number4 = add4(26, 30);
 console.log(number4);
 ```
+
+
+# Javascript ES-6
+
+## 1. let const and var
+
+```bash
+ 1. let 
+ 2. const 
+ 3. var Not Allow es-6
+```
+## 2. template string 
+
+```bash
+const first = "Mozammel";
+const second = "Hosen";
+const full = `${first} ${second}`;
+console.log(full);
+```
+### Output : 
+
+```bash
+Mozammel Hosen
+```
+## 3. Default Parameter in function
+
+```bash
+function number(num1, num2 = 10) {
+  const result = num1 * num2;
+  return result;
+}
+const numbers = number(12);
+console.log(numbers);
+```
+### Output : 
+
+```bash
+120
+```
+
+
 
 
 
