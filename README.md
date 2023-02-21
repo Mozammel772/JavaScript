@@ -213,6 +213,8 @@ console.log(number4);
 
 
 # Javascript ES-6
+## Today : 2-21-2023
+
 
 ## 1. let const and var
 
