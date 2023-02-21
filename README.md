@@ -251,6 +251,82 @@ console.log(numbers);
 ```
 
 
+## 4. Arrow function
+
+```bash
+const number = (num1, num2) => {
+  const result = num1 * num2;
+  return result;
+};
+const number = number1(12,10);
+console.log(number);
+```
+### Output : 
+
+```bash
+120
+```
+## 5. Default Parameter Arrow function
+
+```bash
+const number = (num1, num2 = 10) => {
+  const result = num1 * num2;
+  return result;
+};
+const number = number1(12);
+console.log(number);
+```
+### Output : 
+
+```bash
+120
+```
+## 6. Spread Operator
+
+```bash
+const number = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+console.log(...number);
+```
+### Output : 
+
+```bash
+12 13 14 15 16 17 18 19 20 21 22
+```
+## 7. Spread Operator Example
+
+```bash
+const max = Math.max(12, 14, 145, 165, 16, 165, 1554, 5655);
+console.log(max);
+const maxArray = [12, 13, 145, 15, 15, 215, 14, 250, 140, 1424];
+console.log(maxArray);
+const maxNumber = Math.max(...maxArray)
+console.log(maxNumber);
+
+
+const numbers = [...maxArray];
+numbers.push(465);
+console.log(numbers);
+
+const number = [3663,43,34,44,443,...maxArray,364,643,473,347,43747,478347];
+console.log(number);
+```
+### Output : 
+
+```bash
+5655
+[
+   12,   13, 145,  15,
+   15,  215,  14, 250,
+  140, 1424
+]
+1424
+[
+  478347
+]
+```
+
+
+
 
 
 
