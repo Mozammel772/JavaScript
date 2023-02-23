@@ -327,6 +327,47 @@ console.log(number);
 ]
 ```
 
+# Javascript API
+
+## Stringify
+
+### 1. Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+
+```bash
+const data = {
+  id: 1,
+  name: "Mozammel",
+  address: "Faridpur Sadar Faridpur",
+};
+const result = JSON.stringify(data);
+console.log(result);
+```
+## OutPut :
+
+```bash
+{"id":1,"name":"Mozammel","address":"Faridpur Sadar Faridpur"}
+```
+
+## Parse
+
+## 2. Converts a JavaScript Object Notation (JSON) string into an object.
+
+```bash
+ const data = {
+  "id": 1,
+  "name": "Mozammel",
+  "address": "Faridpur Sadar Faridpur",
+};
+const result = JSON.parse(data)
+console.log(result);
+```
+## OutPut :
+
+```bash
+{ id: 1, name: 'Mozammel', address: 'Faridpur Sadar Faridpur' }
+```
+
+
 
 
 
