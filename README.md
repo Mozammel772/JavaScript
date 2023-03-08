@@ -378,9 +378,9 @@ console.log(result);
 
  JavaScript Error Handle Total 4 Way...
 
-### 1. console.log("Hello World")
-### 2. Vs code Break Point Handle
-### 3. Vs code dubugger KeyWord
+ 1. console.log("Hello World")
+ 2. Vs code Break Point Handle
+ 3. Vs code dubugger KeyWord
 
 ```bash
 console.log("Hello");
@@ -388,7 +388,7 @@ console.log("World");
 debugger;
 console.log("Hello World");
 ```
-### 4. Backtracking error handling
+ 4. Backtracking error handling
 
 
 
@@ -396,7 +396,7 @@ console.log("Hello World");
 
 
 
-# 1. Javascript SyntaxError
+## 1. Javascript SyntaxError
 
 The Javascript SyntaxError is caused by the incorrect use of a pre-defined syntax. Syntax errors are detected while interpreting or parsing source code. For example, a SyntaxError can occur if a closing brace (}) is left off when defining a Javascript function.
 
@@ -416,7 +416,7 @@ const result = num(12, 12);
 console.log(result);
 
 ```
-# 2. Javascript TypeError
+## 2. Javascript TypeError
 
 
 A TypeError may be thrown when: an operand or argument passed to a function is incompatible with the type expected by that operator or function; or. when attempting to modify a value that cannot be changed; or. when attempting to use a value in an inappropriate way.
@@ -435,7 +435,7 @@ let address
 console.log(address.home);
 
 ```
-## OutPut Errors
+### OutPut Errors :
 
 ```bash
 TypeError: Cannot read properties of undefined (reading 'home')
@@ -446,7 +446,7 @@ TypeError: Cannot read properties of undefined (reading 'home')
     at node:internal/main/run_main_module:23:47
 
 ```
-# 3. Javascript Reference Error
+## 3. Javascript Reference Error
 
 
 A reference error occurs when JavaScript tries to access a variable that doesn't exist, hasn't been defined, or doesn't exist in the current scope from which you are trying to access it
@@ -466,7 +466,7 @@ const b = 5;
 console.log(c)
 
 ```
-## OutPut Errors
+### OutPut Errors : 
 
 ```bash
 D:\WEB-7\common-error-javascript-40\Reference-error.js:6
