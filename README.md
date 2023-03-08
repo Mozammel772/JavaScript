@@ -374,7 +374,114 @@ console.log(result);
 ```
 
 
+# Javascript Error Handle :
 
+## JavaScript Error Handle Total 4 Way...
+
+### 1. console.log("Hello World")
+### 2. Vs code Break Point Handle
+### 3. Vs code dubugger KeyWord
+
+```bash
+console.log("Hello");
+console.log("World");
+debugger;
+console.log("Hello World");
+```
+### 4. Backtracking error handling
+
+
+
+
+
+
+
+# 1. Javascript SyntaxError
+
+The Javascript SyntaxError is caused by the incorrect use of a pre-defined syntax. Syntax errors are detected while interpreting or parsing source code. For example, a SyntaxError can occur if a closing brace (}) is left off when defining a Javascript function.
+
+জাভাস্ক্রিপ্ট সিনট্যাক্স ত্রুটি একটি পূর্ব-সংজ্ঞায়িত সিনট্যাক্সের ভুল ব্যবহারের কারণে ঘটে। সোর্স কোড ব্যাখ্যা বা পার্স করার সময় সিনট্যাক্স ত্রুটি সনাক্ত করা হয়। উদাহরণস্বরূপ, একটি সিনট্যাক্স ত্রুটি ঘটতে পারে যদি একটি জাভাস্ক্রিপ্ট ফাংশন সংজ্ঞায়িত করার সময় একটি বন্ধ বন্ধনী (}) ছেড়ে দেওয়া হয়।
+
+```bash
+function num(num1, num2) {
+  //   if (num > 5) {
+  if (num1 > 5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// }
+const result = num(12, 12);
+console.log(result);
+
+```
+# 2. Javascript TypeError
+
+
+A TypeError may be thrown when: an operand or argument passed to a function is incompatible with the type expected by that operator or function; or. when attempting to modify a value that cannot be changed; or. when attempting to use a value in an inappropriate way.
+
+
+
+একটি TypeError নিক্ষিপ্ত হতে পারে যখন: একটি ফাংশনে পাস করা একটি অপারেন্ড বা আর্গুমেন্ট সেই অপারেটর বা ফাংশন দ্বারা প্রত্যাশিত প্রকারের সাথে সামঞ্জস্যপূর্ণ নয়; বা পরিবর্তন করা যাবে না এমন একটি মান পরিবর্তন করার চেষ্টা করার সময়; বা একটি অনুপযুক্ত উপায়ে একটি মান ব্যবহার করার চেষ্টা করার সময়।
+
+
+```bash
+const num = 5;
+// num.push(12);
+console.log(num);
+
+let address
+console.log(address.home);
+
+```
+## OutPut Errors
+
+```bash
+TypeError: Cannot read properties of undefined (reading 'home')
+    at Object.<anonymous> (D:\WEB-7\common-error-javascript-40\type-error.js:6:21)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)      
+    at node:internal/main/run_main_module:23:47
+
+```
+# 3. Javascript Reference Error
+
+
+A reference error occurs when JavaScript tries to access a variable that doesn't exist, hasn't been defined, or doesn't exist in the current scope from which you are trying to access it
+
+
+
+একটি রেফারেন্স ত্রুটি ঘটে যখন জাভাস্ক্রিপ্ট এমন একটি ভেরিয়েবল অ্যাক্সেস করার চেষ্টা করে যা বিদ্যমান নেই, সংজ্ঞায়িত করা হয়নি বা বর্তমান সুযোগে বিদ্যমান নেই যেখান থেকে আপনি এটি অ্যাক্সেস করার চেষ্টা করছেন
+
+
+
+```bash
+// console.log(name)
+const name = "Abul"
+
+const a = 5;
+const b = 5;
+console.log(c)
+
+```
+## OutPut Errors
+
+```bash
+D:\WEB-7\common-error-javascript-40\Reference-error.js:6
+console.log(c)
+            ^
+
+ReferenceError: c is not defined
+    at Object.<anonymous> (D:\WEB-7\common-error-javascript-40\Reference-error.js:6:13)       
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)     
+    at node:internal/main/run_main_module:23:47
+```
 
 
 
