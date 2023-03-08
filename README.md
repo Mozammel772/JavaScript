@@ -376,7 +376,7 @@ console.log(result);
 
 # Javascript Error Handle :
 
-## JavaScript Error Handle Total 4 Way...
+ JavaScript Error Handle Total 4 Way...
 
 ### 1. console.log("Hello World")
 ### 2. Vs code Break Point Handle
