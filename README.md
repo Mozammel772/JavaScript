@@ -484,6 +484,99 @@ ReferenceError: c is not defined
 ```
 
 
+# Javascript Browser API  
+### Browser location api :
+
+### 1. href :
+The href attribute on the location object contains the current webpage's URL.
+By modifying the href property, a user can go to a new URL or page.
+It adds an item to the history list (so that when the user clicks "Back," they can return to the current page).
+Updating the href attribute is faster andeasier than using the assign() function.
+The calling function is slower than accessing the property.
+
+লোকেশন অবজেক্টের href অ্যাট্রিবিউটে বর্তমান ওয়েবপেজের URL রয়েছে।
+href প্রপার্টি পরিবর্তন করে, একজন ব্যবহারকারী একটি নতুন URL বা পৃষ্ঠায় যেতে পারেন।
+এটি ইতিহাসের তালিকায় একটি আইটেম যুক্ত করে (যাতে ব্যবহারকারী যখন "ব্যাক" ক্লিক করেন তখন তারা বর্তমান পৃষ্ঠায় ফিরে যেতে পারে)।
+assign() ফাংশন ব্যবহার করার চেয়ে href অ্যাট্রিবিউট আপডেট করা দ্রুত এবং সহজ।
+কলিং ফাংশন সম্পত্তি অ্যাক্সেস করার চেয়ে ধীর।
+```bash
+  window.location.href = "www.facebook.com"
+```
+### 2. assign :
+The assign() method is used to get a URL and navigate url path on the page. It is worked for adding url path to the browser's history stack.
+
+assign() পদ্ধতিটি একটি URL পেতে এবং পৃষ্ঠায় url পাথ নেভিগেট করতে ব্যবহৃত হয়। এটি ব্রাউজারের ইতিহাস স্ট্যাকে url পাথ যোগ করার জন্য কাজ করা হয়।
+
+```bash
+  window.location.assign("https://web.facebook.com/?_rdc=1&_rdr")
+```
+### 3. replace :
+The replace() pattern is related to assign(), except it doesn't create a new history stack entry. Therefore, you can't use the back button to go back. This function shows new or replaced URLs from old URLs.
+
+প্রতিস্থাপন() প্যাটার্নটি assign() এর সাথে সম্পর্কিত, ব্যতীত এটি একটি নতুন ইতিহাস স্ট্যাক এন্ট্রি তৈরি করে না। অতএব, আপনি ফিরে যেতে ব্যাক বোতাম ব্যবহার করতে পারবেন না। এই ফাংশনটি পুরানো ইউআরএল থেকে নতুন বা প্রতিস্থাপিত ইউআরএল দেখায়।
+
+```bash
+ window.location.replace("https://web.facebook.com/?_rdc=1&_rdr")
+```
+### 4. reload :
+
+The reload() method is utilized to reload a page. When you call reload() with no argument, the browser reloads the page in the most effective method, loading page resources from the cache if they haven't changed since its last request.
+
+একটি পৃষ্ঠা পুনরায় লোড করতে reload() পদ্ধতি ব্যবহার করা হয়। আপনি যখন কোন যুক্তি ছাড়াই reload() কল করেন, ব্রাউজারটি সবচেয়ে কার্যকর পদ্ধতিতে পৃষ্ঠাটিকে পুনরায় লোড করে, ক্যাশে থেকে পৃষ্ঠার সংস্থানগুলি লোড করা হয় যদি সেগুলি তার শেষ অনুরোধের পরে পরিবর্তিত না হয়।
+
+```bash
+  window.location.reload()
+```
+## Browser Alert API :
+
+### 1. Alert :
+The alert() method in JavaScript is used to display a virtual alert box. It is mostly used to give a warning message to the users. It displays an alert dialog box that consists of some specified message (which is optional) and an OK button. When the dialog box pops up, we have to click "OK" to proceed.
+
+জাভাস্ক্রিপ্টে alert() পদ্ধতি একটি ভার্চুয়াল সতর্কতা বক্স প্রদর্শন করতে ব্যবহৃত হয়। এটি বেশিরভাগ ব্যবহারকারীদের একটি সতর্কতা বার্তা দিতে ব্যবহৃত হয়। এটি একটি সতর্কতা ডায়ালগ বক্স প্রদর্শন করে যা কিছু নির্দিষ্ট বার্তা (যা ঐচ্ছিক) এবং একটি ওকে বোতাম নিয়ে গঠিত। ডায়ালগ বক্স পপ আপ হলে, আমাদের এগিয়ে যাওয়ার জন্য "ঠিক আছে" ক্লিক করতে হবে।
+
+```bash
+  alert("Thanks You");
+```
+### 2. Confirm :
+JavaScript confirm method invokes a function that asks the user for a confirmation dialogue on a particular action. The confirm () method uses a window object to invoke a dialogue with a question and two option buttons, OK and Cancel. If the user selects the OK option, it will continue to the function execution; selecting the Cancel option will abort the block code's execution.
+
+It returns true if the user selects the OK option; otherwise, it returns false.
+
+জাভাস্ক্রিপ্ট নিশ্চিতকরণ পদ্ধতি একটি ফাংশনকে আহ্বান করে যা ব্যবহারকারীকে একটি নির্দিষ্ট ক্রিয়া সম্পর্কে নিশ্চিতকরণ কথোপকথনের জন্য জিজ্ঞাসা করে। কনফার্ম () পদ্ধতিতে একটি উইন্ডো অবজেক্ট ব্যবহার করে একটি প্রশ্ন এবং দুটি বিকল্প বোতাম, OK এবং Cancel সহ একটি সংলাপ শুরু করা হয়। ব্যবহারকারী যদি OK বিকল্পটি নির্বাচন করে, তাহলে এটি ফাংশন সম্পাদনে অবিরত থাকবে; বাতিল বিকল্পটি নির্বাচন করলে ব্লক কোডের কার্যকারিতা বাতিল হয়ে যাবে।
+
+ব্যবহারকারী ঠিক আছে বিকল্পটি নির্বাচন করলে এটি সত্য হয়ে যায়; অন্যথায়, এটি মিথ্যা ফেরত দেয়।
+```bash
+const alertBtn2 = () => {
+    const result = confirm("Toi Amke 5k Taka dhar dibi");
+    console.log(result);
+    if (result === true) {
+      alert("Thanks You");
+    } else {
+      alert("Sorry");
+    }
+  };
+```
+### 3. prompt :
+The visitor can type something in the prompt input field and press OK. Then we get that text in the result. Or they can cancel the input by pressing Cancel or hitting the Esc key, then we get null as the result.
+
+The call to prompt returns the text from the input field or null if the input was canceled.
+
+ভিজিটর প্রম্পট ইনপুট ফিল্ডে কিছু টাইপ করতে পারে এবং ঠিক আছে চাপতে পারে। তাহলে আমরা ফলাফলে সেই লেখাটি পাই। অথবা তারা Cancel টিপে বা Esc কী টিপে ইনপুটটি বাতিল করতে পারে, তাহলে আমরা ফলাফল হিসাবে নাল পাব।
+
+কল টু প্রম্পট ইনপুট ক্ষেত্র থেকে পাঠ্য ফেরত দেয় বা ইনপুট বাতিল করা হলে শূন্য।
+```bash
+ const alertBtn3 = () => {
+    const name = prompt("Please enter your name");
+    if (name === null) {
+      alert("Please Provide Your Name");
+    } else {
+      alert("Hello " + name);
+    }
+  };
+```
+
+
+
 
 
 
